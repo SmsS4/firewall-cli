@@ -6,10 +6,10 @@ COMMAND = 3
 ERROR = 4
 
 colors = {
-    DEBUG: 'blue',
-    OUTPUT: 'green',
-    COMMAND: 'yellow',
-    ERROR: 'red',
+    DEBUG: "blue",
+    OUTPUT: "green",
+    COMMAND: "yellow",
+    ERROR: "red",
 }
 
 

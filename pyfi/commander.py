@@ -3,7 +3,7 @@ import subprocess
 from pyfi import logger
 
 
-def run(command: str, log:bool = True) -> int:
+def run(command: str, log: bool = True) -> int:
     """
     Runs a command
     """
@@ -18,6 +18,7 @@ def run(command: str, log:bool = True) -> int:
     if return_code:
         logger.error("Failed")
     return return_code
+
 
 #
 # def save_iptables():
