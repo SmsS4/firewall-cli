@@ -54,3 +54,41 @@ Options:
   --user TEXT  user to restrict access
   --help       Show this message and exit.
 ```
+
+
+# Block dns
+
+### Example
+```commandline
+sudo python -m pyfi.main block-dns --addr varzesh3.ir
+```
+
+### Help
+```
+Usage: main.py block-dns [OPTIONS]
+
+  Blocks address for dns resolve
+
+Options:
+  --addr TEXT  address to block
+  --help       Show this message and exit.
+```
+
+# Block dhcp
+
+### Example
+```commandline
+ python -m pyfi.main block-dhcp --addr 00:00:5e:00:53:af
+```
+
+### Help
+```
+Usage: main.py block-dhcp [OPTIONS]
+
+  Blocks dhcp protocol for specified mac address
+
+Options:
+  --addr TEXT  mac-address to block
+  --help       Show this message and exit.
+
+```
