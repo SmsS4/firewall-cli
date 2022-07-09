@@ -1,5 +1,3 @@
-from typing import Optional
-
 import click
 
 from pyfi.commander import run
@@ -9,7 +7,7 @@ def add_block_addr_and_port(cli):
     @cli.command(name="block-addr")
     @click.option("--address", "-a", help="ip/url to block", type=str)
     @click.option("--output", is_flag=True, help="Blocks output")
-    def block_addr(address: str, output: bool, port: Optional[int]):
+    def block_addr(address: str, output: bool):
         """
         Blocks ip/url
         """

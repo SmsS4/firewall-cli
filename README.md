@@ -36,3 +36,21 @@ Options:
   --output         Blocks output
   --help           Show this message and exit.
 ```
+
+# Block ssh
+
+### Example
+```commandline
+python -m pyfi.main block-ssh --user smss
+```
+
+### Help
+```
+Usage: main.py block-ssh [OPTIONS]
+
+  Blocks user from accessing ssh to your computer
+
+Options:
+  --user TEXT  user to restrict access
+  --help       Show this message and exit.
+```
