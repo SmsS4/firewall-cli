@@ -166,3 +166,20 @@ Options:
   --protocol TEXT              protocol of connection. defaults to tcp
   --help                       Show this message and exit.
 ```
+
+# Dos syn flood
+### Example
+```commandline
+ python -m pyfi.main dos-syn-flood --port 80 --rate-limit 100
+```
+
+### Help
+```
+Usage: python -m pyfi.main dos-syn-flood [OPTIONS]
+
+Options:
+  --port INTEGER        port to limit number of connections
+  --rate-limit INTEGER  number of allowed connections
+  --protocol TEXT       protocol of connection. defaults to tcp
+  --help                Show this message and exit.
+```
