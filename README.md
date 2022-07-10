@@ -236,3 +236,20 @@ Usage: python -m pyfi.main dos-export [OPTIONS]
 Options:
   --help  Show this message and exit.
 ```
+
+# Port knocking
+
+### Example
+```commandline
+ python -m pyfi.main port-knocking --knocks 12345,23456,34567  --port 80
+```
+
+### Help
+```
+Usage: python -m pyfi.main port-knocking [OPTIONS]
+
+Options:
+  --knocks TEXT   list of port to use for port knocking separated by `,`
+  --port INTEGER  destination port
+  --help          Show this message and exit.
+```
