@@ -18,11 +18,3 @@ def run(command: str, log: bool = True) -> int:
     if return_code:
         logger.error("Failed")
     return return_code
-
-
-#
-# def save_iptables():
-#     """
-#     Saves iptable
-#     """
-#     run('sudo iptables save', log=False)

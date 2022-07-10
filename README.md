@@ -183,3 +183,56 @@ Options:
   --protocol TEXT       protocol of connection. defaults to tcp
   --help                Show this message and exit.
 ```
+
+# Dos history
+you have to run `python -m pyfi.main dos-add-logger` once to config database and history
+
+### Example
+```commandline
+python -m pyfi.main dos-export
+```
+
+### Output example
+```
+IP                   NUMBER OF PACKETS    LENGTH OF PACKETS
+190.2.145.41         15123                20349922
+104.16.248.249       11                   4800
+168.119.4.163        3                    168
+8.8.8.8              117                  9760
+188.120.248.18       833                  572388
+168.119.209.188      112                  5824
+127.0.0.1            63                   4655
+66.102.1.188         13                   676
+194.36.144.87        3                    168
+3.64.117.201         3                    168
+78.47.93.191         3                    168
+45.9.61.155          2                    112
+74.91.29.203         3                    156
+0.0.0.0              10                   320
+192.168.31.126       29                   1742
+192.168.31.224       10                   320
+178.22.122.100       15                   1090
+74.91.29.206         31                   4254
+127.0.0.53           15                   1138
+192.168.31.1         19                   1948
+185.125.190.58       2                    112
+185.120.22.12        2                    112
+74.91.29.202         7                    520
+216.58.212.142       1                    52
+192.168.31.209       4                    128
+185.125.190.57       2                    112
+142.250.186.132      11                   7388
+193.158.22.13        2                    112
+131.188.3.221        2                    112
+131.188.3.220        2                    112
+```
+
+### Help
+```
+Usage: python -m pyfi.main dos-export [OPTIONS]
+
+  Exports ips history
+
+Options:
+  --help  Show this message and exit.
+```
