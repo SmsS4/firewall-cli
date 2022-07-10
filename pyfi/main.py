@@ -1,10 +1,10 @@
 import click
 
-from pyfi.address_blocking import add_block_addr_and_port
-from pyfi.content_blocking import add_content_blocking
-from pyfi.dos_blocking import add_dos_blocking
-from pyfi.port_scanner import add_port_scanner
-from pyfi.protocols_blocking import add_protocols_blocking
+from pyfi.blockers.address import add_block_addr_and_port
+from pyfi.blockers.content import add_content_blocking
+from pyfi.blockers.dos import add_dos_blocking
+from pyfi.blockers.port_scanner import add_port_scanner
+from pyfi.blockers.protocols import add_protocols_blocking
 
 
 @click.group()

@@ -60,7 +60,7 @@ Options:
 
 ### Example
 ```commandline
-sudo python -m pyfi.main block-dns --addr varzesh3.ir
+python -m pyfi.main block-dns --addr varzesh3.ir
 ```
 
 ### Help
