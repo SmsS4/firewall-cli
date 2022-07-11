@@ -5,6 +5,21 @@
 
 # Garbage firewall cli
 
+# Block regex
+### Example
+```commandline
+python -m pyfi.main block-regex --address 123.123.123.(.*)
+```
+### Help
+```
+Usage: python -m pyfi.main block-regex [OPTIONS]
+
+Options:
+  -a, --address TEXT  ip/url to block
+  --output            Blocks output
+  --help              Show this message and exit.
+```
+
 # Block url/ip
 
 ### Example
@@ -42,6 +57,22 @@ Options:
   --protocol TEXT  protocol to block. tcp/udp
   --output         Blocks output
   --help           Show this message and exit.
+```
+
+# Block ftp
+### Example
+```commandline
+python -m pyfi.main block-ftp --file 123.txt
+```
+### Help
+```
+Usage: python -m pyfi.main block-ftp [OPTIONS]
+
+  Blocks access to specified file
+
+Options:
+  --file TEXT  file to restrict access
+  --help       Show this message and exit.
 ```
 
 # Block ssh

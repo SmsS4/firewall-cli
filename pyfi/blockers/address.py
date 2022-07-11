@@ -4,6 +4,14 @@ from pyfi.commander import run
 
 
 def add_block_addr_and_port(cli):
+    @cli.command(name="block-regex")
+    @click.option("--address", "-a", help="ip/url to block", type=str)
+    @click.option("--output", is_flag=True, help="Blocks output")
+    def block_regex(address: str, output: str):
+        run(
+            f'iptables -I {"OUTPUT" if output else "INPUT"} -p tcp --dport 80 -m string --string "/\/ .+Host: {address}" --algo regex -j DROP'
+        )
+
     @cli.command(name="block-addr")
     @click.option("--address", "-a", help="ip/url to block", type=str)
     @click.option("--output", is_flag=True, help="Blocks output")
