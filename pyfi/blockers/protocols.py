@@ -4,6 +4,16 @@ from pyfi.commander import run
 
 
 def add_protocols_blocking(cli):
+    @cli.command(name="block-ftp")
+    @click.option("--file", help="file to restrict access", type=str)
+    def ftp(file: str):
+        """
+        Blocks access to specified file
+        """
+        run(
+            f'iptables -I OUTPUT -p tcp --dport 21 -m string --string "RETR {file}" --algo bm -j DROP'
+        )
+
     @cli.command(name="block-ssh")
     @click.option("--user", help="user to restrict access", type=str)
     def ssh(user: str):
